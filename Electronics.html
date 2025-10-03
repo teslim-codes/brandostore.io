@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electronic Appliances - Brando</title>
+<link rel="stylesheet" href="./CSS/electronics.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo"><span>🛒</span> BRANDO</div>
+    <div class="menu-toggle">☰</div>
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./About.html">About</a>
+      <a href="./contact.html">Contact</a>
+      <a href="#" class="cta-btn">Post Free Ad</a>
+    </nav>
+  </header>
+
+  <!-- Appliances Section -->
+  <section class="appliances-section">
+    <h1 style="color: green;">Electronic Appliances</h1>
+    <div class="appliance-grid">
+      <div class="appliance-card">
+        <img src="./image/ref.jpg" alt="Refrigerator">
+        <h3>Refrigerator</h3>
+        <p class="price">$800</p>
+      </div>
+
+      <div class="appliance-card">
+        <img src="./image/WASH.jpg" alt="Washing Machine">
+        <h3>Washing Machine</h3>
+        <p class="price">$500</p>
+      </div>
+
+      <div class="appliance-card">
+        <img src="./image/MICRO.jpg" alt="Microwave Oven">
+        <h3>Microwave Oven</h3>
+        <p class="price">$150</p>
+      </div>
+
+      <div class="appliance-card">
+        <img src="./image/TV.jpg" alt="LED TV">
+        <h3>LED TV</h3>
+        <p class="price">$400</p>
+      </div>
+
+      <div class="appliance-card">
+        <img src="./image/AC.jpg" alt="Air Conditioner">
+        <h3>Air Conditioner</h3>
+        <p class="price">$300</p>
+      </div>
+
+      <div class="appliance-card">
+        <img src="./image/BLENDER.jpg" alt="Blender">
+        <h3>Blender</h3>
+        <p class="price">$100</p>
+      </div>
+
+      <div class="appliance-card">
+        <img src="./image/KETTLE.jpg" alt="Electric Kettle">
+        <h3>Electric Kettle</h3>
+        <p class="price">$50</p>
+      </div>
+
+      <div class="appliance-card">
+        <img src="./image/TOAST.jpg" alt="Toaster">
+        <h3>Toaster</h3>
+        <p class="price">$70</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Brando. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JavaScript for Mobile Menu -->
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Furniture - Brando</title>
+ <link rel="stylesheet" href="./CSS/furniture.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo"><span>🛋️</span> BRANDO</div>
+    <div class="menu-toggle">☰</div>
+    <nav>
+     <a href="./index.html">Home</a>
+      <a href="./About.html">About</a>
+      <a href="./contact.html">Contact</a>
+      <a href="#" class="cta-btn">Post Free Ad</a>
+    </nav>
+  </header>
+
+  <!-- Furniture Section -->
+  <section class="furniture-section">
+    <h1>Home Furniture</h1>
+    <div class="furniture-grid">
+      <div class="furniture-card">
+        <img src="sofa.jpg" alt="Sofa">
+        <h3>Sofa</h3>
+        <p class="price">$500</p>
+      </div>
+
+      <div class="furniture-card">
+        <img src="dining-table.jpg" alt="Dining Table">
+        <h3>Dining Table</h3>
+        <p class="price">$400</p>
+      </div>
+
+      <div class="furniture-card">
+        <img src="armchair.jpg" alt="Armchair">
+        <h3>Armchair</h3>
+        <p class="price">$150</p>
+      </div>
+
+      <div class="furniture-card">
+        <img src="bed-frame.jpg" alt="Bed Frame">
+        <h3>Bed Frame</h3>
+        <p class="price">$350</p>
+      </div>
+
+      <div class="furniture-card">
+        <img src="coffee-table.jpg" alt="Coffee Table">
+        <h3>Coffee Table</h3>
+        <p class="price">$200</p>
+      </div>
+
+      <div class="furniture-card">
+        <img src="dresser.jpg" alt="Dresser">
+        <h3>Dresser</h3>
+        <p class="price">$250</p>
+      </div>
+
+      <div class="furniture-card">
+        <img src="bookshelf.jpg" alt="Bookshelf">
+        <h3>Bookshelf</h3>
+        <p class="price">$180</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Brando. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JavaScript for Mobile Menu -->
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

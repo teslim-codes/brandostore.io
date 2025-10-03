@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Brando</title>
+  <link rel="stylesheet" href="./CSS/contact.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo"><span>🛒</span> BRANDO</div>
+    <div class="menu-toggle">☰</div>
+    <nav>
+       <a href="./index.html">Home</a>
+      <a href="./About.html">About</a>
+      <a href="./contact.html">Contact</a>
+      <a href="#" class="cta-btn">Post Free Ad</a>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="contact-info">
+      <h1>Contact Us</h1>
+      <p>We’d love to hear from you! Reach out to us for inquiries, feedback, or support.</p>
+      <p><strong>Email:</strong> support@brando.com</p>
+      <p><strong>Phone:</strong> +234 800 123 4567</p>
+      <p><strong>Address:</strong> 123 Brando Street, Lagos, Nigeria</p>
+    </div>
+
+    <div class="contact-form">
+      <h2>Send us a message</h2>
+      <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Brando. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JavaScript for Mobile Menu -->
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

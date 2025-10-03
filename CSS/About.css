@@ -1,0 +1,284 @@
+    /* === Base Reset === */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* === Header === */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 1.3rem;
+      color: #028402;
+    }
+
+    .logo span {
+      color: green;
+      margin-right: 5px;
+      font-size: 1.6rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      font-weight: 500;
+    }
+
+    .cta-btn {
+      background: green;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .cta-btn:hover {
+      background: #028402;
+    }
+
+    /* Mobile Nav */
+    .menu-toggle {
+      display: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+
+    /* === About Section === */
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px 30px;
+      background: #fff;
+    }
+
+    .about-text {
+      flex: 1;
+      min-width: 300px;
+      margin-right: 20px;
+     
+    }
+
+    .about-text h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+       color: #028402;
+    }
+
+    .about-text p {
+      margin-bottom: 15px;
+      color: #555;
+    
+    }
+
+    .about-text h2 {
+      margin-top: 25px;
+      font-size: 1.3rem;
+       color: #028402;
+    }
+
+    .about-img {
+      flex: 1;
+      text-align: center;
+       margin-top: 10px;
+      margin-left: 1rem;
+    }
+
+    .about-img img {
+      max-width: 450px;
+      border-radius: 10px;
+    
+    }
+
+    /* === Footer === */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: #fff;
+      margin-top: 20px;
+    }
+
+    /* =======================
+  /* =======================
+   Responsive Media Queries for About Page
+   ======================= */
+
+/* Mobile devices (max 600px) */
+@media (max-width: 600px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 15px;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    z-index: 1000;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  nav a {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  /* Hero section */
+  .about-hero {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .about-hero img {
+    width: 100%;
+    height: auto;
+    margin: 15px 0 0;
+  }
+
+  /* About content */
+  .about-content {
+    padding: 15px;
+    font-size: 0.95rem;
+    text-align: justify;
+  }
+
+  /* Team section */
+  .team {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 15px;
+  }
+
+  .team-member img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  footer {
+    font-size: 0.85rem;
+    padding: 15px;
+    text-align: center;
+  }
+}
+
+/* Tablet devices (601px–900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  nav {
+    gap: 15px;
+  }
+
+  .about-hero {
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .about-hero img {
+    width: 70%;
+    margin: 20px auto 0;
+  }
+
+  .about-content {
+    padding: 20px;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .team {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .team-member img {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* Desktop devices (901px and above) */
+@media (min-width: 901px) {
+  nav {
+    display: flex !important;
+    gap: 25px;
+  }
+
+  .about-hero {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 50px;
+  }
+
+  .about-hero img {
+    width: 400px;
+    margin-left: 30px;
+  }
+
+  .about-content {
+    padding: 40px 60px;
+    font-size: 1.1rem;
+  }
+
+  .team {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 40px 60px;
+  }
+}
